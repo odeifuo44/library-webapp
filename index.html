@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook Store</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<!-- Navbar -->
+
+
+<body>
+    <header class="main-header">
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/img/ebook.png" alt="eBook Store Logo">
+                <h1>Let's read...</h1>
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Login</a></li> 
+                <!-- <li><a href="#"><i class="fa fa-user"></i></a></li> -->
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <!-- Sidebar with Search Bar -->
+        <aside class="sidebar">
+            <h2>Our Collections</h2>
+            <input type="text" id="search-bar" placeholder="Search for a book..." onkeyup="searchBooks()">
+            <ul id="book-list">
+                <!-- List of books will be injected here -->
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+
+        <div class="hero-img">
+            <!-- <img src="./assets/img/hero-img.jpg" alt=""> -->
+        </div>
+        <div class="main-content">
+            <h1>All Readers' Library</h1>
+            <p>Explore a wide range of books across genres.</p>
+            <div id="book-display">
+                <!-- Books will be displayed here -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script> 
+
+    <!-- <section class="footer">
+        <h3>Let's get intereactive</h3> 
+        <a href="#"><i class="fa fa-fb"></i></a>
+    </section> -->
+</body>
+
+</html>
