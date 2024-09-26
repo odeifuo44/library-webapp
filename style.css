@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(202, 148, 11);
+    background-color: rgb(202, 148, 11);  
     padding: 15px;
     color: white;
 }
