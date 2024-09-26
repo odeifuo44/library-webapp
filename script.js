@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Display books in the sidebar
             displayBooks(data.works); 
             console.log(data.works[0].
-                ia_collection[0, 1, 2]               ) 
+                ia_collection[0, 1, 2]
+                ) 
         } catch (error) {
             console.error('Error fetching books:', error);
         }
@@ -69,9 +70,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Function to display book details in the main content area
-    function displayBookDetails(title, authors, content) {
+    function displayBookDetails(title, authors) {
         const bookDisplay = document.getElementById("book-display");
-
 
         // Create a container for book details
         const bookItem = document.createElement('div');
@@ -82,12 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
         bookTitle.classList.add('book-title');
         bookTitle.textContent = title;  // Set the title content 
 
-        
-        // Create an element for the book content
-        const bookContent = document.createElement('div');
-        bookContent.classList.add('book-content');
-        bookContent.textContent = content;  // Set the title content
-
         // Create an element for the book authors
         const bookAuthor = document.createElement('div');
         bookAuthor.classList.add('book-author');
@@ -96,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Append the title and author to the book item
         bookItem.appendChild(bookTitle);
         bookItem.appendChild(bookAuthor);
-        bookItem.appendChild(bookContent);
+        
 
         // Clear the previous book details and append the new book details
         bookDisplay.innerHTML = '';
